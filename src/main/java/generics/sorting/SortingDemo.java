@@ -57,6 +57,11 @@ public class SortingDemo {
                 .collect(toList());
     }
 
+    // Sort by length then alpha without using sorted
+    public List<String> lengthSortThenAlphaSort() {
+        return sampleStrings.stream().collect(toList());
+    }
+    
     // Sort by length then alpha using sorted
     public List<String> lengthSortThenAlphaSortUsingSorted() {
         return sampleStrings.stream()
